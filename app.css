@@ -9,6 +9,12 @@ body{
     padding: 0;
 }
 
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
 ul{
     margin: 0;
     padding: 0;
@@ -40,7 +46,7 @@ nav > ul{
 }
 
 .button:hover, .button:focus{
-    background-color: red;
+    /* background-color: gold; */
 }
 
 .dropdown{
@@ -74,4 +80,44 @@ nav > ul{
 
 ul li:hover > ul, ul li ul:hover{
     visibility: visible;
+}
+
+#footer{
+    margin-top: 200px;
+    background-color: #3F3F4C;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2em 0;
+}
+
+.foot-sects{
+    color: #F5F5F5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.foot-sects > a{
+    color: #F5F5F5;
+    margin: 0.3em;
+    font-size: 20px;
+}
+
+.foot-sects > hr{
+    width: 5vw;
+}
+
+#footer h3{
+    margin: 0;
+    font-size: 30px;
+}
+
+.media{
+    color: #F5F5F5;
+}
+
+.media-icons{
+    justify-self: center;
+    display: flex;
+    align-items: center;
 }
