@@ -7,6 +7,7 @@
 body{
     margin: 0;
     padding: 0;
+    background-image: url(images/background-img.webp);
 }
 
 header{
@@ -46,17 +47,30 @@ nav > ul{
 }
 
 .button:hover, .button:focus{
-    /* background-color: gold; */
+    background-color: #12143b;
+}
+
+#main-drop{
+    position: relative;
 }
 
 .dropdown{
     visibility: hidden;
+    opacity: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
     position: absolute;
-    top: 5%;
-    left: 40%;
+    height: 150%;
+    max-height: 5000px;
+    bottom: -150%;
+}
+
+.dropdown:hover, #main-drop:hover .dropdown{
+    visibility: visible;
+    opacity: 1;
+    display: block;
 }
 
 #logo{
@@ -83,7 +97,8 @@ ul li:hover > ul, ul li ul:hover{
 }
 
 #footer{
-    margin-top: 200px;
+    margin-top: 750px;
+    /* temp margin */
     background-color: #3F3F4C;
     display: flex;
     justify-content: space-evenly;
@@ -105,7 +120,7 @@ ul li:hover > ul, ul li ul:hover{
     
 }
 
-a:hover, a:focus{
+.foot-sects>a:hover, .foot-sects>a:focus{
     background-color: #2C2C2C;
     transition: background, 150ms;
 }
@@ -142,6 +157,11 @@ a:hover, a:focus{
 input[type="submit"]{
     background-color: black;
     color:#F5F5F5;
+}
+
+input[type="submit"]:hover, input[type="submit"]:focus{
+    cursor: pointer;
+    background-color: #12143b;
 }
 
 input[type="email"]{
