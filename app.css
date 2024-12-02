@@ -2,6 +2,7 @@
 
 *{
     font-family: "Kulim Park", sans-serif;
+    z-index: 1;
 }
 
 body{
@@ -190,3 +191,8 @@ input{
     display: flex;
     justify-content: center;
 }
+
+
+
+
+/* merge stuff below */
