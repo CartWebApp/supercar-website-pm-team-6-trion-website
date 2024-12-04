@@ -318,3 +318,118 @@ p {
     display: flex;
     flex-direction: column;
 }
+
+
+.homepage p, h2{
+    font-weight: 400;
+}
+
+.hero{
+    text-indent: -9999px;
+    background-image: url("images/KS_config_hanger.png");
+    padding: 45vh 1vw;
+    background-position: center;
+    background-attachment: fixed;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-shadow: 0px 8px 3px 2px rgba(0, 0, 0, 0.50);
+}
+
+.card{
+    display: flex;
+    margin-top: 5em;
+    background-position: center;
+    background-size: 100% 100%;
+    padding: 2em 0;
+}
+
+.card-left{
+    background-image: url("images/cardL-background.png");
+    justify-content: flex-end;
+}
+
+.card-right{
+    background-image: url("images/cardR-background.png");
+    justify-content: flex-start;
+}
+
+.card-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color:#f5f5f5;
+    text-align: left;
+    max-width: 550px;
+    margin-left: 15%;
+    margin-right: 15em;
+}
+
+.card-right .card-text{
+    margin-left: 15em;
+    margin-right: 16em;
+}
+
+.card-text h2{
+    font-size: 40px;
+    text-decoration-line: underline;
+}
+
+.card-text p{
+    font-size: 23px;
+}
+
+.card-text a{
+    font-size: 30px;
+    border: 2px solid #FCC900;
+    color: #F5F5F5;
+    border-radius: 8px;
+    background: #2C2C2C;
+    align-self: flex-end;
+    padding: 0.5rem 0.2rem;
+    margin-right: 0.5em;
+}
+
+.card-text a:hover, .card-text a:focus{
+    background-color: #5a651f;
+    transition: background, 200ms;
+}
+
+.card img{
+    border-radius: 50px;
+    border: 3px solid #FCC900;
+    max-height: 400px;
+}
+
+.home-desc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10em;
+}
+
+.home-desc article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #f5f5f5;
+    max-width: 900px;
+}
+
+.home-desc h2{
+    font-size: 40px;
+    margin-top: 1.5em;
+    margin-bottom: 0.1em;
+}
+
+.home-desc hr{
+    width: 100%;
+}
+
+.home-desc p{
+    font-size: 23px;
+}
+
+.home-desc > article img{
+    max-height: 160px;
+    margin: 3em 0 6em 0;
+}
