@@ -78,7 +78,7 @@ nav > ul{
     margin-top: 0.5em;
 }
 
-.hoverer:hover .dropdown{
+.hoverer:hover .dropdown, .hoverer:focus-within .dropdown{
     visibility: visible;
     opacity: 1;
     display: block;
@@ -101,10 +101,6 @@ nav > ul{
 
 .icons{
     margin: 0 0.7em;
-}
-
-ul li:hover > ul, ul li ul:hover{
-    visibility: visible;
 }
 
 #footer{
@@ -163,6 +159,11 @@ ul li:hover > ul, ul li ul:hover{
     margin-left: 0;
 }
 
+.media-icons img:hover, .media-icons img:focus{
+    background-color: #2C2C2C;
+    transition: background, 200ms;
+}
+
 input[type="submit"]{
     background-color: black;
     color:#F5F5F5;
@@ -171,6 +172,7 @@ input[type="submit"]{
 input[type="submit"]:hover, input[type="submit"]:focus{
     cursor: pointer;
     background-color: #12143b;
+    transition: background, 200ms;
 }
 
 input[type="email"]{
@@ -190,27 +192,6 @@ input{
     display: flex;
     justify-content: center;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* merge below */
 
 .selectorMain h1 {
     color: #F5F5F5;
