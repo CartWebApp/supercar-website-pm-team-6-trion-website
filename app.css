@@ -52,6 +52,7 @@ nav > ul{
 
 .button:hover, .button:focus{
     background-color: #12143b;
+    color: #F5F5F5;
 }
 
 #main-drop{
