@@ -267,10 +267,12 @@ p {
 .selectorBody footer {
     margin-top: 3em;
 }
-
+/* carpage */
 .carHero {
     display: flex;
     flex-direction: column;
+    align-content: center;
+    margin-top: -5em;
 
 }
 
@@ -278,32 +280,86 @@ p {
     color: #f5f5f5;
     font-size: 50px;
     align-self: center;
+    font-weight:normal;
 }
 
 .carHero img {
-    max-height: 85vh;
+    width: 100%;
+    align-self: center;
+    max-height: 95vh;
 }
 
 .carHero h2 {
     color: #f5f5f5;
-    font-size: 30px;
+    font-size: 35px;
 }
 
-.carHero article {
+.carHero section {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    width: 100%;
+
+}
+
+#sixty {
+    margin-left: 4em;
+    margin-right: 5.3em;
 }
 
 .carHero hr {
-    width: 100%;
+    width: 99.94%;
 }
 
 .carCreator {
     display: flex;
     flex-direction: column;
+    margin-top: 4em;
+}
+
+.carCreator img {
+    align-self: center;
+    border-radius: 50px;
+    border: 3px solid #FCC900;
+    width: 90%;
+    margin: 0 0em 0 0em;
+}
+
+.carCreator .button {
+    border: 2px solid #FCC900;
+    align-self: center;
+    text-align: justify;
+    font-size: 40px;
+    font-weight:normal;
+    padding: 0.5em 3em;
+    margin-top: 1em;
+}
+
+.carCreator p {
+    text-align: center;
+    margin-top: -0.6em;
+}
+
+.carDesc {
+    margin-top: 10em;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.carDesc h3 {
+    color: #f5f5f5;
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+.carDesc img {
+    border: 3px solid #FCC900;
+    border-radius: 25px;
+    width: 100%;
 }
 
 
+/* homepage */
 .homepage p, h2{
     font-weight: 400;
 }
