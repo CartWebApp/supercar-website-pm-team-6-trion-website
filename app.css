@@ -305,6 +305,11 @@ p {
     margin-right: 5.3em;
 }
 
+.carpage {
+    display: flex;
+    flex-direction: column;
+}
+
 .carHero hr {
     width: 99.94%;
 }
@@ -341,8 +346,9 @@ p {
 .carDesc {
     margin-top: 10em;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     width: 100%;
+
 }
 
 .carDesc h3 {
@@ -351,12 +357,28 @@ p {
     text-decoration: underline;
 }
 
-.carDesc img {
+.carDesc > article > img {
     border: 3px solid #FCC900;
     border-radius: 25px;
     width: 100%;
+    justify-self: center;
 }
 
+.carDesc > article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: max-content;
+    margin: 0 7em 0 7em;
+}
+
+.carDesc > article > h3 {
+    align-self: flex-start;
+}
+
+.carDesc > article > p {
+    align-self: flex-start;
+}
 
 /* homepage */
 .homepage p, h2{
