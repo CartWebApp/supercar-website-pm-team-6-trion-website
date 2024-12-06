@@ -128,7 +128,7 @@ nav > ul{
 
 .foot-sects>a:hover, .foot-sects>a:focus{
     background-color: #2C2C2C;
-    transition: background, 150ms;
+    transition: background-color 200ms;
 }
 
 .foot-sects > hr{
@@ -429,7 +429,7 @@ p {
 
 .card-text a:hover, .card-text a:focus{
     background-color: #5a651f;
-    transition: background, 200ms;
+    transition: background-color, 200ms;
 }
 
 .card img{
@@ -470,4 +470,83 @@ p {
 .home-desc > article img{
     max-height: 160px;
     margin: 3em 0 6em 0;
+}
+
+.active{
+    color: black;
+    background-color: #CCA300;
+}
+
+.pageOption {
+  overflow: hidden;
+  position: relative;
+  margin: 5em auto 0;
+  width: 99vw; height: 55em;
+  /* width: 100%; 
+  height: 55em; */
+  background-color: black;
+}
+
+.option, .option img { 
+    width: 100%; 
+    height: 100%; 
+}
+
+.option {
+  overflow: hidden;
+  position: absolute;  
+  /* arctan(27 / 40) = 34.01935deg 
+   * need to skew by 90deg - 34.01935deg = 55.98065deg
+   round to second place
+   29.05460407667
+  */
+  transform: skewX(-29.05deg);
+  background-image: url("images/background-img.webp");
+  /* roatate background imgae to match site */
+  /* https://www.sitepoint.com/css3-transform-background-image/ */
+}
+
+.option:first-child {
+  left: -.25em;
+  transform-origin: 100% 0;
+}
+
+/* .option:last-child {
+  right: -.25em;
+  transform-origin: 0 100%;
+} */
+
+.option img { 
+    opacity: .75;
+    /* transition: .5s; */
+    /* wibbly wobbly timey wimey */
+}
+
+.option img:hover { 
+    opacity: 1; 
+}
+
+.option img, .option:after {
+  transform: skewX(29.05deg);
+  transform-origin: inherit;
+}
+
+.option:after {
+  position: absolute;
+  margin: .5em 1.65em;
+  color: white;
+  font: 500 1.25em Courier;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  content: attr(data-inf);
+}
+
+.option:first-child:after { 
+    top: 0; 
+    left: 0; 
+}
+
+.option:last-child:after { 
+    right: 0; 
+    bottom: 0; 
 }
