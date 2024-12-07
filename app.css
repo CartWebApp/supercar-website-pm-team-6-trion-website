@@ -275,7 +275,7 @@ p {
 
 }
 
-.carHero h1, .carCreator h2  {
+.carHero h1, .carCreator h2, .confirmInfo h1  {
     color: #f5f5f5;
     font-size: 50px;
     align-self: center;
@@ -572,4 +572,28 @@ p {
 .option:last-child:after { 
     right: 0; 
     bottom: 0; 
+}
+
+
+/* New stuff added 12/7 by OK */
+.confirmation {
+    display: flex;  
+    margin-top: 4em
+
+}
+
+.confirmInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.confirmInfo hr {
+    width: 100%;
+}
+
+.confirmInfo a {
+    border: 3px solid #FCC900; 
+    font-size: 30px;
+    align-self: center;
+    width: 80%;
 }
