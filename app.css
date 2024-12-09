@@ -596,4 +596,5 @@ p {
     font-size: 30px;
     align-self: center;
     width: 80%;
+    justify-content: center;
 }
