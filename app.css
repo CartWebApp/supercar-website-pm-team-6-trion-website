@@ -72,7 +72,7 @@ nav > ul{
     max-height: 5000px;
     padding: 0 0.5em 0;
     height: 0;
-    left: 35.5%;
+    margin-left: -1.25em;
     z-index: -1;
     box-shadow: 0px 8px 5px 0px rgba(0, 0, 0, 0.50);
     transition: padding 800ms, height 800ms ease-out;
@@ -578,7 +578,6 @@ p {
     scale: 0.8;
 }
 
-/* New stuff added 12/7 by OK */
 .confirmation {
     display: flex;  
     margin-top: 4em
@@ -588,6 +587,7 @@ p {
 .confirmInfo {
     display: flex;
     flex-direction: column;
+    margin-left: 2em;
 }
 
 .confirmInfo hr {
@@ -600,4 +600,41 @@ p {
     align-self: center;
     width: 80%;
     justify-content: center;
+}
+
+#sideButton:hover, #frontButton:hover, #backButton:hover {
+    cursor:pointer;
+}
+
+#frontButton, #sideButton, #backButton {
+    background-color: #2C2C2C;
+    color: #f5f5f5;
+    border: 3px solid #FCC900;
+    position: absolute;
+    font-size: 40px;
+    border-radius: 20px;
+}
+
+#frontButton {
+    margin-top: 15em;
+    margin-left: -15em;
+}
+
+#sideButton {
+    margin-top: 15em;
+    margin-left: -10em;
+}
+
+#backButton {
+    margin-top: 15em;
+    margin-left: -5em;
+}
+
+#carImage {
+    width: 100%;
+    border-radius: 50px;
+}
+
+.confirmImage {
+    display: flex;
 }

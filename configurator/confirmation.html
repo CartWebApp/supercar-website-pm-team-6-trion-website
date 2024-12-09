@@ -7,6 +7,20 @@
     <link rel="stylesheet" href="/app.css">
     <title>See the Final Car</title>
 </head>
+<script>
+function pictureChange1()
+    {
+    document.getElementById('carImage').src="/images/Group 43.png";
+    }
+    function pictureChange2()
+    {
+    document.getElementById('carImage').src="/images/Group 44.png";
+    }
+    function pictureChange3()
+    {
+    document.getElementById('carImage').src="/images/Group 45.png";
+    }
+</script>
 <body>
     <header>
         <nav>
@@ -32,6 +46,13 @@
         </nav>
     </header>
     <main class="confirmation">
+
+        <section class="confimImage">
+            <img id="carImage" src="/images/Group 43.png">
+            <input type="button" id="frontButton" value="1" onclick="pictureChange1()">
+            <input type="button" id="sideButton" value="2" onclick="pictureChange2()">
+            <input type="button" id="backButton" value="3" onclick="pictureChange3()">
+        </section>
 
 
         <section class="confirmInfo">
