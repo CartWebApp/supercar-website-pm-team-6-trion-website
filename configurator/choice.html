@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="/images/logo.png">
     <link rel="stylesheet" href="/app.css">
-    <script src="carting.js"></script>
     <title>Trion Customizer Selection</title>
 </head>
 <body>
@@ -34,11 +33,11 @@
     </header>
     <main>
         <section class='pageOption'>
-            <a href='config.html' class='option' data-inf='Exterior'>
-                <img src="/images/7_25-Lux-Black-Nemesis_fr34-1024x575.png" alt="">
+            <a href='config.html' class='option' data-inf='Exterior' style="transform: skewX(-63deg)">
+                <img class="rotate" src="/images/7_25-Lux-Black-Nemesis_fr34-1024x575.png" alt="">
             </a>
             <a href='config.html' class='option' data-inf='Interior'>
-              <img src='/images/car-innards.png'>
+              <img class="rotate" src='/images/car-innards.png'>
             </a>
         </section>
     </main>
@@ -81,5 +80,6 @@
     <aside class="to-top">
         <a href="#top"><img src="/images/up-arrow.png" alt="Arrow To Top"></a>
     </aside>
+    <script src="/carting.js" defer></script>
 </body>
 </html>
