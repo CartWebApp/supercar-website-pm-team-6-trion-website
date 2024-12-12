@@ -16,17 +16,17 @@
                     <li class="hoverer"><a class="button" id="main-drop" href="/carSelector.html">Supercars</a>
                         <ul class="dropdown">
                             <li><a class="button" href="/blackWidow.html">Black Widow</a></li>
-                            <li><a class="button" href="/about.html">Nemesis GT</a></li>
+                            <li><a class="button" href="#">Nemesis GT</a></li>
                             <li><a class="button" href="#">Nemesis RR</a></li>
                         </ul>
                     </li>
                     <li><a class="button" href="/carSelectorCustom.html">Customizer</a></li>
-                    <li><a class="button" href="#">About Trion</a></li>
+                    <li><a class="button" href="/about.html">About Trion</a></li>
                     <li><a class="button" href="#">Merchandise</a></li>
                 </article>
                 <article id="right">
                     <li><a href="#"><img class="icons" src="/images/cart-icon.png" alt="Shopping Cart Icon"></a></li>
-                    <li><a href="#"><img class="icons" src="/images/profile-icon.png" alt="Account Profile Icon"></a></li>
+                    <li><a href="/account.html"><img class="icons" src="/images/profile-icon.png" alt="Account Profile Icon"></a></li>
                 </article>
             </ul>
         </nav>
@@ -34,15 +34,105 @@
     <main class="accountMain">
         <h1>Account & Accessibility</h1>
         <hr>
-        <section class="accountContent">
-            <article class="accessibilityOpt">
-                <h2>Accessibility Options</h2>
+        <div>
+            <section class="accessibilityOpt">
+                <h2>Accessibility Options</h2> 
+                <form class="accessibilityForm">
+                    <label>Font Size:</label>
+                    <div>
+                        <input type="radio" name="g" checked="checked">
+                        <label>100%</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="g">
+                        <label>120%</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="g">
+                        <label>150%</label>
+                    </div>
+                
+                
+                    <label>Languages:</label>
+                    <div>
+                        <input type="radio" name="l" checked="checked">
+                        <label>English</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="l">
+                        <label>普通话</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="l">
+                        <label>हिन्दी</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="l">
+                        <label>Español</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="l">
+                        <label>Français</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="l">
+                        <label>عربي</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="l">
+                        <label>বাংলা</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="l">
+                        <label>Português</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="l">
+                        <label>Русский</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="l">
+                        <label>اردو</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="l">
+                        <label>Indonesia</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="l">
+                        <label>Deutsch</label>
+                    </div>
 
-            </article>
+                    <label>Contrast:</label>
+                    <div>
+                        <input type="radio" name="C" checked="checked">
+                        <label>Normal</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="C">
+                        <label>High</label>
+                    </div>
 
-        </section>
-
-
+                </form>
+            </section>
+            <section class="accountSection">
+                <article class="accountContent">
+                    <h2>Saved Car Configurations</h2>
+                    <p>View car configurations you have made and copy the configuration code or edit them.</p>
+                    <a href="/savedCar.html" class="button">Saved Cars</a>
+                </article>
+                <article class="accountContent">
+                    <h2>Merchandise Order History</h2>
+                    <p>View your past purchases from the official Trion Supercars merch store.</p>
+                    <a href="#" class="button">Order History</a>
+                </article>
+                <article class="accountContent">
+                    <h2>Concierge Service</h2>
+                    <p>Get in contact with an official Trion Supercars support agent to help you solve issues regarding your account.</p>
+                    <a href="#" class="button">Concierge</a>
+                </article>
+            </section>
+        </div>
 
 
     </main>
@@ -54,7 +144,7 @@
         <article class="foot-sects">
             <h3>Supercars</h3>
             <hr>
-            <a href="#">Black Widow</a>
+            <a href="/blackWidow.html">Black Widow</a>
             <a href="#">Nemesis GT</a>
             <a href="#">Nemesis RR</a>
         </article>
@@ -68,9 +158,9 @@
         <article class="foot-sects">
             <h3>Account</h3>
             <hr>
-            <a href="#">Lorem</a>
-            <a href="#">Lorem</a>
-            <a href="#">Lorem</a>
+            <a href="/savedCar.html">Saved Configurations</a>
+            <a href="#">Order History</a>
+            <a href="#">Concierge</a>
         </article>
         <article class="media">
             <h3>Sign up for our Newsletter</h3>

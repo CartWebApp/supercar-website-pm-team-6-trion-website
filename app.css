@@ -758,11 +758,20 @@ h6 {
 }
 
 .accountMain hr {
-    width: 100vw;
+    width: 99vw;
 }
 
 .accountContent {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3em;
+    /* background-color: #2C2C2C; */
+    /* add a background color. */
+}
+
+.accountSection {
+    width: 75%;
 }
 
 .accountMain h1 {
@@ -773,12 +782,76 @@ h6 {
 }
 
 .accessibilityOpt {
-    border: 1px solid #f5f5f5;
+    border-right: 1px solid #f5f5f5;
+    border-top: 1px solid #f5f5f5;
     display: flex;
     background-color: #2C2C2C;
+    width: 25%;
+    flex-direction: column;
+    margin-top: -0.55em;
+    overflow-y: scroll;
+    max-height: 53em;
 }
 
-.accessibilityOpt h2 {
+.accessibilityOpt h2, .accountContent h2 {
     color: #F5F5F5;
     font-size: 30px;
+    align-self: center;
+}
+
+.accountMain div {
+    display: flex;
+}
+
+.accountContent a {
+    border: 3px solid #FCC900;
+    font-size: 25px;
+    width: 8em;
+    display: block;
+    text-align: center;
+}
+
+.accessibilityOpt form {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+}
+
+label {
+    color: #F5F5F5;
+    font-size: 25px;
+}
+
+div >label {
+    font-size: 20px;
+    margin-top: 0.6em;
+}
+
+input {
+    width: 5em;
+}
+
+.accessibilityForm {
+    padding-bottom: 3em;
+}
+
+.savedMain {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4em;
+}
+
+.savedMain h1 {
+    color: #F5F5F5;
+    text-align: center;
+    font-size: 50px;
+}
+
+.savedMain hr {
+    width:85%;
+}
+
+.savedCars {
+    display: flex;
+    flex-direction: column;
 }
