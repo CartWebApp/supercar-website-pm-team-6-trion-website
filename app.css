@@ -451,6 +451,10 @@ p {
     margin-right: 0.5em;
 }
 
+.card-right .card-text a{
+    align-self: flex-start;
+}
+
 .card-text a:hover, .card-text a:focus{
     background-color: #5a651f;
     transition: background-color, 200ms;
@@ -507,7 +511,6 @@ p {
   margin: 4.7em auto 0;
   width: 99vw; 
   height: 55em;
-  background-color: black;
 }
 
 .option, .option img { 
@@ -519,6 +522,7 @@ p {
   overflow: hidden;
   position: absolute;  
   transform: skewX(-66.7deg);
+  /* use javascript to update angle */
 }
 .option::before{
     background-image: url("images/background-img.webp");
@@ -537,7 +541,7 @@ p {
 } 
 
 .option img { 
-    opacity: .75;
+    opacity: .5;
     transition: .5s;
 }
 
@@ -614,7 +618,6 @@ p {
     position: absolute;
     font-size: 40px;
     border-radius: 20px;
-
 }
 
 #frontButton {
@@ -757,6 +760,134 @@ h6 {
     flex-direction: column;
 }
 
+#section-page-main h1 {
+    color: #F5F5F5;
+    text-align: center;
+    font-size: 50px;
+}
+
+#section-page-main{
+    display: flex;
+    flex-direction: column;
+}
+
+#section-page-main hr {
+    width: 85%
+} 
+
+#products{
+    align-self: center;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    max-width: 55vw;
+    margin: 5em 0 2em 0;
+}
+
+.merch{
+    background-color: #F5F5F5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    width: 15vw;
+    max-height: 550px;
+    opacity: .75;
+    transition: opacity 500ms, box-shadow 500ms;
+    border: 3px solid #FCC900;
+    border-radius: 10px;
+    margin-bottom: 4em;
+    margin-left: 1em;
+}
+
+.merch p, a{
+    color: black;
+}
+
+.product-text{
+    margin: 0 1em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.merch img{
+    width: 15vw;
+    max-width: 500px;
+    max-height: 300px;
+    height: 20vh;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom: 1px solid black;
+}
+
+.merch:nth-child(1), .merch:nth-child(4), .merch:nth-child(7){
+    margin-left: 0;
+}
+
+.merch:hover{
+    opacity: 1;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+#config-main{
+    display: flex;
+}
+
+#config-main > img{
+    width: 100%;
+    object-fit: cover;
+}
+
+#config-all{
+    display: flex;
+    margin-top: 4.7em;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+#config-links{
+    display: flex;
+    flex-direction: column;
+    border: 4px solid #FCC900;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    min-width: 6vw;
+}
+
+#config-links a{
+    color: white;
+    text-align: center;
+    width: 100%;
+    padding: 2em 0;
+    border-bottom: 2px solid #FCC900
+}
+
+#config-bar{
+    display: flex;
+    flex-direction: column;
+    border: 4px solid #FCC900;
+    border-left: 0;
+    min-width: 20vw;
+}
+
+#config-bar a{
+    color: white;
+    position: relative;
+}
+
+#config-options{
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    max-height: 79vh;
+    min-height: 79vh;
+}
+
+.option-inner{
+    display: flex;
+    flex-direction: column;
+}
+
 .accountMain hr {
     width: 99vw;
 }
@@ -854,4 +985,141 @@ input {
 .savedCars {
     display: flex;
     flex-direction: column;
+}
+.option-inner a{
+    text-align: center;
+    align-self: center;
+    width: 90%;
+    padding: 2em 0;
+    margin: 1em 0;
+    border-radius: 6px;
+}
+
+.colors-options{
+    background-color: orange;
+}
+
+#confirm-config{
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    padding: 2em 0;
+    background-color: #2C2C2C;
+    border-top: 4px solid #FCC900;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#store-main{
+    display: flex;
+    flex-direction: column;
+}
+
+#store-main h1 {
+    color: #F5F5F5;
+    text-align: center;
+    font-size: 50px;
+}
+
+#store-main hr {
+    width: 85%
+} 
+
+#featured{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 4vh 10vw;
+}
+
+#featured a{
+    background-color: #F5F5F5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    width: 15vw;
+    max-height: 550px;
+    opacity: .75;
+    transition: opacity 500ms, box-shadow 500ms;
+    border: 3px solid #FCC900;
+    border-radius: 10px;
+}
+
+#featured img{
+    width: 15vw;
+    max-width: 500px;
+    max-height: 300px;
+    height: 20vh;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom: 1px solid black;
+}
+
+#featured h2{
+    font-size: 30px;
+    font-weight: 500;
+}
+
+#featured a:hover{
+    opacity: 1;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+#big-boy{
+    min-width: 50vw;
+}
+
+#big-boy img{
+    min-width: 50vw;
+}
+
+.shop-card{
+    position: relative;
+    border: 3px solid #FCC900;
+    border-radius: 12px;
+    max-width: 20vw;
+    margin-bottom: 5vh;
+}
+
+.shop-card a{
+    border-radius: 300px;
+    opacity: .75;
+    transition: opacity 500ms, box-shadow 500ms;
+}
+
+.shop-card a:hover{
+    opacity: 1;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+.shop-card img{
+    border-radius: 10px;
+    max-width: 20vw;
+}
+
+.shop-card h2{
+    text-align: center;
+    background-color: #F5F5F5;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 0;
+    min-width: 8vw;
+    padding: 2vh 2vw;
+    font-size: 30px;
+    font-weight: 500;
+    border-bottom-right-radius: 8px;
+    border: 4px solid #FCC900;
+}
+
+#categories{
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 50vw;
+    margin: 5vh 0 0 0;
 }
