@@ -985,6 +985,7 @@ input {
 .savedCars {
     display: flex;
     flex-direction: column;
+    margin-top: 2em;
 }
 .option-inner a{
     text-align: center;
@@ -1122,4 +1123,45 @@ input {
     justify-content: space-between;
     max-width: 50vw;
     margin: 5vh 0 0 0;
+}
+
+.carIndividual {
+    align-self: center;
+    background-color: #2C2C2C;
+    margin-bottom: 2em;
+    border: 3px solid #FCC900;
+    border-radius: 25px;
+    width: 55%;
+}
+
+.carIndividual h2{
+    color: #F5F5F5;
+    font-size: 30px;
+}
+
+.intExt {
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+}
+
+.ext {
+    margin-left: 5em;
+}
+
+.int {
+    margin-left: 1em;
+}
+
+.savedImage {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.intExt a {
+    align-self: flex-end;
+    border: 3px solid #FCC900;
+    position: absolute;
+    right: 0;
+    bottom: 0;
 }
