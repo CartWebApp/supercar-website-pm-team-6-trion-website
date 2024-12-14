@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="/images/logo.png">
     <link rel="stylesheet" href="/app.css">
+    <script src="carting.js"></script>
     <title></title>
 </head>
 <body>
@@ -16,13 +17,13 @@
                     <li class="hoverer"><a class="button" id="main-drop" href="/carSelector.html">Supercars</a>
                         <ul class="dropdown">
                             <li><a class="button" href="/blackWidow.html">Black Widow</a></li>
-                            <li><a class="button" href="/about.html">Nemesis GT</a></li>
+                            <li><a class="button" href="#">Nemesis GT</a></li>
                             <li><a class="button" href="#">Nemesis RR</a></li>
                         </ul>
                     </li>
                     <li><a class="button" href="/carSelectorCustom.html">Customizer</a></li>
-                    <li><a class="button" href="#">About Trion</a></li>
-                    <li><a class="button" href="#">Merchandise</a></li>
+                    <li><a class="button" href="/about.html">About Trion</a></li>
+                    <li><a class="button" href="/merchandise/index.html">Merchandise</a></li>
                 </article>
                 <article id="right">
                     <li><a href="#"><img class="icons" src="/images/cart-icon.png" alt="Shopping Cart Icon"></a></li>
@@ -31,36 +32,15 @@
             </ul>
         </nav>
     </header>
-    <main class="historyMain">
-        <h1>Order History</h1>
-        <hr>
-        <div role="region" class="allOrders"> 
-            <section class="previousItem">
-                <img src="/images/7_25-Lux-Black-Nemesis_rr-crop-1024x682.png" alt="#">
-                <article>
-                    <h2>Hat</h2>
-                    <p>h8hdwuh</p>
-                </article>
-            </section>
-            <section class="previousItem">
-                <img src="/images/7_25-Lux-Black-Nemesis_rr-crop-1024x682.png" alt="#">
-                <article>
-                    <h2>Hat</h2>
-                    <p>h8hdwuh</p>
-                </article>
-            </section>
-            <section class="previousItem">
-                <img src="/images/7_25-Lux-Black-Nemesis_rr-crop-1024x682.png" alt="#">
-                <article>
-                    <h2>Hat</h2>
-                    <p>h8hdwuh</p>
-                </article>
-            </section>
-        </div>
+    <main class="conciergeMain">
+        <article>
+            <img src="/images/customer-care-icon.png" alt="An icon of a tech support man.">
+            <p>Hello, type your question in the box below and I will try my best to answer.</p>
+        </article>
+        <form>
+            <input type="text" placeholder="Text Here...">
+        </form>
     </main>
-
-
-
     <footer id="footer">
         <article class="foot-sects">
             <h3>Supercars</h3>
@@ -81,7 +61,7 @@
             <hr>
             <a href="/savedCar.html">Saved Configurations</a>
             <a href="/orderHistory.html">Order History</a>
-            <a href="#">Concierge</a>
+            <a href="/concierge.html">Concierge</a>
         </article>
         <article class="media">
             <h3>Sign up for our Newsletter</h3>

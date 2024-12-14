@@ -464,6 +464,7 @@ p {
     border-radius: 50px;
     border: 3px solid #FCC900;
     max-height: 400px;
+    width: 42%
 }
 
 .home-desc{
@@ -1185,4 +1186,67 @@ input {
 
 .previousItem {
     display: flex;
+    background-color: #2C2C2C;
+    width: 40%;
+    margin-top: 2em;
+    border: 3px solid #FCC900;
+    border-radius: 15px;
+}
+
+.previousItem img {
+    display: flex;
+    width: 50%;
+    border-radius: 10px;
+}
+
+.allOrders {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 2em;
+}
+
+.historyMain h2 {
+    color: #F5F5F5;
+    font-size: 30px;
+}
+
+.previousItem article {
+    margin-left: 1em;
+}
+
+.conciergeMain > article > img {
+    background-color: #f5f5f5;
+    border-radius: 100%;
+    border: 3px solid #FCC900;
+    width: 5em;
+    height: 5em;
+}
+
+.conciergeMain {
+    display: flex;
+    flex-direction: column;
+    margin: 6em 1em 0 1em;
+}
+
+.conciergeMain article {
+    display: flex;
+}
+
+.conciergeMain p {
+    background-color: #3F3F4C; 
+    border-radius: 20px;
+    border-bottom-left-radius: 0;
+    padding: 1em;
+    margin-left: 1em;
+}
+
+.conciergeMain input {
+    width: 80%;
+}
+
+.conciergeMain form {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 40em;
 }
