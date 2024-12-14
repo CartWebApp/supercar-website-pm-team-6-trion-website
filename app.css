@@ -593,6 +593,7 @@ p {
     display: flex;
     flex-direction: column;
     margin-left: 30em;
+    width: 35%;
 }
 
 .confirmInfo hr {
@@ -695,8 +696,7 @@ p {
 }
 
 .missionText p{
-    display: flex;
-    width: 60%;
+    max-width: 1em;
     text-wrap: wrap;
     margin: 5em 3em 0 0;
 }
