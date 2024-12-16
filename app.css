@@ -1094,8 +1094,12 @@ input {
     position: relative;
     border: 3px solid #FCC900;
     border-radius: 12px;
-    max-width: 20vw;
+    /* max-width: 20vw; */
     margin-bottom: 5vh;
+    object-fit: cover;
+    max-height: 15em;
+    overflow: hidden;
+    background-color: gray;
 }
 
 .shop-card a{
@@ -1112,6 +1116,7 @@ input {
 .shop-card img{
     border-radius: 10px;
     max-width: 20vw;
+    object-fit: cover;
 }
 
 .shop-card h2{
@@ -1666,6 +1671,7 @@ button:focus{
     .shop-card img{
         max-width: none;
         width: 100%;
+
     }
     .intExt{
         flex-direction: column;
