@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="/images/logo.png">
-    <link rel="stylesheet" href="/app.css">
-    <title>Trion Customizer</title>
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
+    <link rel="stylesheet" href="app.css">
+    <title>Trion Black Widow</title>
 </head>
 <body>
     <header>
@@ -17,12 +17,12 @@
                         <ul class="dropdown">
                             <li><a class="button" href="/blackWidow.html">Black Widow</a></li>
                             <li><a class="button" href="/nemesisGT">Nemesis GT</a></li>
-                            <li><a class="button" href="/nemesisRR.html">Nemesis RR</a></li>
+                            <li><a class="button active" href="/nemesisRR.html">Nemesis RR</a></li>
                         </ul>
                     </li>
-                    <li><a class="button active" href="/carSelectorCustom.html">Customizer</a></li>
+                    <li><a class="button" href="/carSelectorCustom.html">Customizer</a></li>
                     <li><a class="button" href="/about.html">About Trion</a></li>
-                    <li><a class="button active" href="/merchandise/index.html">Merchandise</a></li>
+                    <li><a class="button" href="/merchandise/index.html">Merchandise</a></li>
                 </article>
                 <article id="right">
                     <li><a href="/merchandise/cart.html"><img class="icons" src="/images/cart-icon.png" alt="Shopping Cart Icon"></a></li>
@@ -35,31 +35,37 @@
             </section>
         </nav>
     </header>
-    <main id="config-main">
-        <img src="/images/XxZw_6Vr 3.png">
-        <section id="config-all">
-            <section id="config-links">
-                <a href="#paint">Paint Color</a>
-                <a href="#calipers">Calipers</a>
-                <a href="#windows">Window Tint</a>
-                <a href="#rims">Rims</a>
-                <a href="#others">Others</a>
+    <main class="carpage">
+        <section class="carHero">
+            <img src="/images/XxZw_6Vr 3.png" alt="Orange Black Widow car.">
+            <h1>Black Widow</h1>
+            <section>
+                <h2 id="speed">300 MPH Top Speed</h2>
+                <h2 id="sixty">0-60 in 2.1 Sec.</h2>
+                <h2 id="horse">1400 Horsepower</h2>
             </section>
-            <section id="config-bar">
-                <section id="config-options">
-                    <section class="option-inner" id="paint">
-                        <a href="" class="colors-options" data-col='#FF0000'>Red</a>
-                        <a href="" class="colors-options" data-col='orange'>Orange</a>
-                        <a href="" class="colors-options" data-col='yellow'>Yellow</a>
-                        <a href="" class="colors-options" data-col='purple'>Purple</a>
-                        <a href="" class="colors-options" data-col='blue'>Blue</a>
-                    </section>
-                    <section id="calipers">
-                    </section>
-                </section>
-                <a id="confirm-config" href="confirmation.html">Confirm Selection</a>
-            </section>
+            <hr>        
         </section>
+        <section class="carCreator">
+            <img src="/images/7_25-Lux-Black-Nemesis_side-cropped2-1024x575 1 (2).png" alt="The side of a Trion Supercar.">
+            <h2>Make it Your Own</h2>
+            <p>Design your own custom Trion Supercar that is unique to you, using our easy to use customization system.</p>
+            <a href="/configurator/choice.html" class="button">Customize</a>
+        </section>
+
+        <section class="carDesc">
+            <article>
+                <img src="/images/trionnemesissupercars 1 (1).png" alt="A white Trion SuperCar driving on a road.">
+                <h3>An All-Electric Race Car</h3>
+                <p>This all-electric race car combines cutting-edge technology with unparalleled performance, offering lightning-fast acceleration and top-tier handling. Its lightweight carbon fiber body ensure maximum efficiency and stability at high speeds.</p>
+            </article>
+            <article>
+                <img src="/images/trionblacksupercar2 1 (1).png" alt="A black Trion Supercar in front of a city.">
+                <h3>Into the Future</h3>
+                <p>This all-electric race car combines cutting-edge technology with unparalleled performance, offering lightning-fast acceleration and top-tier handling. Its lightweight carbon fiber body ensure maximum efficiency and stability at high speeds.</p>
+            </article>
+        </section>
+
     </main>
     <footer>
         <section id="desk-footer">
@@ -105,5 +111,7 @@
         </section>
     </footer>
     <aside class="to-top">
+        <a href="#top"><img src="/images/up-arrow.png" alt="Arrow To Top"></a>
+    </aside>
 </body>
 </html>
