@@ -1263,7 +1263,6 @@ input {
 }
 
 #product-main button{
-    background-color: #3F3F4C;
     transition: box-shadow 200ms, background-color 200ms;
 }
 
@@ -1399,12 +1398,14 @@ button:focus{
 
 .conciergeMain input {
     width: 80%;
+    border-radius: 8px;
+    border-bottom-right-radius: 0;
 }
 
 .conciergeMain form {
     display: flex;
     justify-content: flex-end;
-    margin-top: 40em;
+    margin-top: 30em;
 }
 
 #cart-main hr{
@@ -1575,6 +1576,20 @@ button:focus{
     height: 100%;
     max-width: 75px;
     margin: 0 1em;
+}
+
+#mobile-menu{
+    display: flex;
+    flex-direction: column;
+    background-color: #3F3F4C;
+    margin: 7em 1em;
+}
+
+#mobile-menu a{
+    color: white;
+    font-size: 50px;
+    padding: 1em;
+    border: 1px solid #FCC900;
 }
 
 @media screen and (max-width: 1200px){
@@ -1750,5 +1765,44 @@ button:focus{
     }
     #config-bar{
         width: 100%;
+    }
+    .confirmInfo{
+        margin-bottom: 3em;
+    }
+    .confirmImage{
+        margin-left: 2em;
+        margin-right: 0;
+    }
+    .confirmImage img{
+        max-width: unset;
+    }
+    .aboutRich{
+        flex-direction: column;
+        align-items: center;
+    }
+    .mission{
+        flex-direction: column;
+        align-items: center;
+    }
+    .missionText{
+        margin-left: 3em;
+    }
+    .aboutTeam{
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 5em;
+    }
+    .aboutTeam article{
+        width: 100%;
+    }
+    #speed, #sixty, #horse{
+        font-size: 25px;
+        margin: 0;
+    }
+    #sixty, #horse{
+        margin-left: 1em;
+    }
+    .carDesc{
+        flex-direction: column;
     }
 }
