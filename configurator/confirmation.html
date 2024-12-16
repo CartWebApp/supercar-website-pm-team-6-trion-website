@@ -6,21 +6,21 @@
     <link rel="icon" type="image/x-icon" href="/images/logo.png">
     <link rel="stylesheet" href="/app.css">
     <title>See the Final Car</title>
+    <script>
+        function pictureChange1()
+            {
+            document.getElementById('carImage').src="/images/Group 43.png";
+            }
+        function pictureChange2()
+            {
+            document.getElementById('carImage').src="/images/Group 44.png";
+            }
+        function pictureChange3()
+            {
+            document.getElementById('carImage').src="/images/Group 45.png";
+            }
+    </script>
 </head>
-<script>
-function pictureChange1()
-    {
-    document.getElementById('carImage').src="/images/Group 43.png";
-    }
-    function pictureChange2()
-    {
-    document.getElementById('carImage').src="/images/Group 44.png";
-    }
-    function pictureChange3()
-    {
-    document.getElementById('carImage').src="/images/Group 45.png";
-    }
-</script>
 <body>
     <header>
         <nav>
@@ -44,6 +44,7 @@ function pictureChange1()
                 </ul></li>
             </ul>
             <section id="mobile-nav">
+                <h2 class="disappear clear">Mobile Navigation Bar</h2>
                 <a id="mobile1" href="/mobileMenu.html"><img src="/images/iconoir_profile-circle.png" alt="Menu Icon"></a>
                 <a id="mobile2" href="/account.html"><img src="/images/profile-icon.png" alt="Account Icon"></a>
             </section>
@@ -52,7 +53,8 @@ function pictureChange1()
     <main class="confirmation">
 
         <section class="confirmImage">
-            <img id="carImage" src="/images/Group 43.png">
+            <h2 class="disappear">Confirmation Image</h2>
+            <img id="carImage" src="/images/Group-43.png" alt="Customized Car Preview">
             <form>
                 <input type="button" id="frontButton" value="1" onclick="pictureChange1()">
                 <input type="button" id="sideButton" value="2" onclick="pictureChange2()">
@@ -73,6 +75,7 @@ function pictureChange1()
     </main>
     <footer>
         <section id="desk-footer">
+            <h2 class="disappear">Desktop Footer</h2>
             <article class="foot-sects">
                 <h3>Supercars</h3>
                 <hr>
@@ -97,10 +100,12 @@ function pictureChange1()
             <article class="media">
                 <h3>Sign up for our Newsletter</h3>
                 <article id="email-stuff">
+                    <h2 class="disappear clear">email stuff</h2>
                     <input type="email" placeholder="Text Here...">
                     <input type="submit" value="Submit">
                 </article>
                 <article class="media-icons">
+                    <h2 class="disappear clear">media stuff</h2>
                     <a href="https://twitter.com/trionsupercars"><img src="/images/x_logo.png" alt="X, Formerly Twitter, Logo"></a>
                     <a href="https://www.instagram.com/trionsupercarsgroup/"><img src="/images/instagram_logo.png" alt="Instagram Logo"></a>
                     <a href="https://www.facebook.com/richard.patterson.9041/"><img src="/images/facebook_logo.png" alt="Facebook Logo"></a>
