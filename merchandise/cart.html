@@ -6,7 +6,7 @@
     <link rel="icon" type="image/x-icon" href="/images/logo.png">
     <link rel="stylesheet" href="/app.css">
     <script src="carting.js"></script>
-    <title>Trion Headwear</title>
+    <title>Trion Cart</title>
 </head>
 <body>
     <header>
@@ -17,7 +17,7 @@
                     <li class="hoverer"><a class="button" id="main-drop" href="/carSelector.html">Supercars</a>
                         <ul class="dropdown">
                             <li><a class="button" href="/blackWidow.html">Black Widow</a></li>
-                            <li><a class="button" href="#">Nemesis GT</a></li>
+                            <li><a class="button" href="/about.html">Nemesis GT</a></li>
                             <li><a class="button" href="#">Nemesis RR</a></li>
                         </ul>
                     </li>
@@ -27,54 +27,61 @@
                 </article>
                 <article id="right">
                     <li><a href="#"><img class="icons" src="/images/cart-icon.png" alt="Shopping Cart Icon"></a></li>
-                    <li><a href="#"><img class="icons" src="/images/profile-icon.png" alt="Account Profile Icon"></a></li>
+                    <li><a href="/account.html"><img class="icons" src="/images/profile-icon.png" alt="Account Profile Icon"></a></li>
                 </article>
             </ul>
         </nav>
     </header>
-    <main>
-        <section id="section-page-main">
-            <article>
-                <h1 id="carSelectorHeading">Headwear</h1>
-                <hr>
+    <main id="cart-main">
+        <h1>Shopping Cart</h1>
+        <hr>
+        <section id="cart-stuff">
+            <article class="cart-item">
+                <img src="/images/blackwidow-maybe.png" alt="">
+                <div class="item-details">
+                    <h2>Item Name</h2>
+                    <h3>$3.00</h3>
+                    <div class="item-count">
+                        <button>-</button>
+                        <p>3</p>
+                        <button>+</button>
+                    </div>
+                </div>
             </article>
-            <section id="products">
-                <article class="merch">
-                    <a href="">
-                        <img src="/images/blackwidow-maybe.png" alt="">
-                        <div class="product-text">
-                            <h2>Hat</h2>
-                            <h2>$3.00</h2>
-                        </div>
-                    </a>
-                </article>
-                <article class="merch">
-                    <a href="">
-                        <img src="/images/blackwidow-maybe.png" alt="">
-                        <div class="product-text">
-                            <h2>Hat</h2>
-                            <h2>$3.00</h2>
-                        </div>
-                    </a>
-                </article>
-                <article class="merch">
-                    <a href="">
-                        <img src="/images/blackwidow-maybe.png" alt="">
-                        <div class="product-text">
-                            <h2>Hat</h2>
-                            <h2>$3.00</h2>
-                        </div>
-                    </a>
-                </article>
-                
-            </section>
+            <article class="cart-item">
+                <img src="/images/blackwidow-maybe.png" alt="">
+                <div class="item-details">
+                    <h2>Item Name</h2>
+                    <h3>$3.00</h3>
+                    <div class="item-count">
+                        <button>-</button>
+                        <p>3</p>
+                        <button>+</button>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section id="purchase">
+            <h2>Address</h2>
+            <input type="text" placeholder="1234 E Placeholder Dr.">
+            <h2>Credit Card Info</h2>
+            <h3>Cardholder Name:</h3>
+            <input type="text" placeholder="John Doe">
+            <h3>Card Number:</h3>
+            <input type="text">
+            <h3>Expiration Date:</h3>
+            <input type="text" placeholder="07/35">
+            <h3>Security Code:</h3>
+            <input type="text" placeholder="777">
+            <h2>Total: $20.00</h2>
+            <a href="index.html">Place Order</a>
         </section>
     </main>
     <footer id="footer">
         <article class="foot-sects">
             <h3>Supercars</h3>
             <hr>
-            <a href="#">Black Widow</a>
+            <a href="/blackWidow.html">Black Widow</a>
             <a href="#">Nemesis GT</a>
             <a href="#">Nemesis RR</a>
         </article>
@@ -88,9 +95,9 @@
         <article class="foot-sects">
             <h3>Account</h3>
             <hr>
-            <a href="#">Lorem</a>
-            <a href="#">Lorem</a>
-            <a href="#">Lorem</a>
+            <a href="/savedCar.html">Saved Configurations</a>
+            <a href="/orderHistory.html">Order History</a>
+            <a href="#">Concierge</a>
         </article>
         <article class="media">
             <h3>Sign up for our Newsletter</h3>
