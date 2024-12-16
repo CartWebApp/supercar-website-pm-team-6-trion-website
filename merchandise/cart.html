@@ -6,7 +6,7 @@
     <link rel="icon" type="image/x-icon" href="/images/logo.png">
     <link rel="stylesheet" href="/app.css">
     <script src="carting.js"></script>
-    <title>Trion (Product Name)</title>
+    <title>Trion Cart</title>
 </head>
 <body>
     <header>
@@ -17,13 +17,13 @@
                     <li class="hoverer"><a class="button" id="main-drop" href="/carSelector.html">Supercars</a>
                         <ul class="dropdown">
                             <li><a class="button" href="/blackWidow.html">Black Widow</a></li>
-                            <li><a class="button" href="#">Nemesis GT</a></li>
+                            <li><a class="button" href="/about.html">Nemesis GT</a></li>
                             <li><a class="button" href="#">Nemesis RR</a></li>
                         </ul>
                     </li>
                     <li><a class="button" href="/carSelectorCustom.html">Customizer</a></li>
-                    <li><a class="button" href="/about.html">About Trion</a></li>
-                    <li><a class="button" href="/merchandise/index.html">Merchandise</a></li>
+                    <li><a class="button" href="#">About Trion</a></li>
+                    <li><a class="button" href="#">Merchandise</a></li>
                 </article>
                 <article id="right">
                     <li><a href="#"><img class="icons" src="/images/cart-icon.png" alt="Shopping Cart Icon"></a></li>
@@ -32,22 +32,49 @@
             </ul>
         </nav>
     </header>
-    <main id="product-main">
-        <img src="/images/blackwidow-maybe.png" alt="">
-        <section id="product-stuff">
-            <h1>Hat</h1>
-            <hr>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque a minima expedita adipisci praesentium, exercitationem cum dicta fuga neque. Rem sit adipisci repellat in eius modi architecto ipsam nulla magnam?</p>
-            <article id="product-buttons">
-                <h2>Colors:</h2>
-                <button id="color1">Red</button>
-                <button id="color2">Blue</button>
-                <button id="color3">Yellow</button>
-                <button id="color4">Green</button>
-                <button id="color5">Black</button>
+    <main id="cart-main">
+        <h1>Shopping Cart</h1>
+        <hr>
+        <section id="cart-stuff">
+            <article class="cart-item">
+                <img src="/images/blackwidow-maybe.png" alt="">
+                <div class="item-details">
+                    <h2>Item Name</h2>
+                    <h3>$3.00</h3>
+                    <div class="item-count">
+                        <button>-</button>
+                        <p>3</p>
+                        <button>+</button>
+                    </div>
+                </div>
             </article>
-            <h2>$3.00</h2>
-            <a href="index.html">Add To Cart</a>
+            <article class="cart-item">
+                <img src="/images/blackwidow-maybe.png" alt="">
+                <div class="item-details">
+                    <h2>Item Name</h2>
+                    <h3>$3.00</h3>
+                    <div class="item-count">
+                        <button>-</button>
+                        <p>3</p>
+                        <button>+</button>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section id="purchase">
+            <h2>Address</h2>
+            <input type="text" placeholder="1234 E Placeholder Dr.">
+            <h2>Credit Card Info</h2>
+            <h3>Cardholder Name:</h3>
+            <input type="text" placeholder="John Doe">
+            <h3>Card Number:</h3>
+            <input type="text">
+            <h3>Expiration Date:</h3>
+            <input type="text" placeholder="07/35">
+            <h3>Security Code:</h3>
+            <input type="text" placeholder="777">
+            <h2>Total: $20.00</h2>
+            <a href="index.html">Place Order</a>
         </section>
     </main>
     <footer id="footer">
@@ -59,18 +86,18 @@
             <a href="#">Nemesis RR</a>
         </article>
         <article class="foot-sects">
-            <h3>Merchandise</h3>
+            <h3>Service</h3>
             <hr>
-            <a href="/merchandise/index.html">Store</a>
-            <a href="#">Featured</a>
-            <a href="#">Cart</a>
+            <a href="#">Lorem</a>
+            <a href="#">Lorem</a>
+            <a href="#">Lorem</a>
         </article>
         <article class="foot-sects">
             <h3>Account</h3>
             <hr>
             <a href="/savedCar.html">Saved Configurations</a>
             <a href="/orderHistory.html">Order History</a>
-            <a href="/concierge.html">Concierge</a>
+            <a href="#">Concierge</a>
         </article>
         <article class="media">
             <h3>Sign up for our Newsletter</h3>
