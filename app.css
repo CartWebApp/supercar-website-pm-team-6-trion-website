@@ -29,7 +29,6 @@ a{
 nav ul{
     list-style: none;
     background-color: #3F3F4C;
-    border-bottom: 1px solid black;
 }
 
 nav > ul{
@@ -37,6 +36,7 @@ nav > ul{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 1px solid black;
 }
 
 .button{
@@ -1537,6 +1537,7 @@ button:focus{
     align-items: center;
     justify-content: space-between;
     visibility: hidden;
+    position: absolute;
 }
 
 #mobile1 img{
@@ -1575,6 +1576,7 @@ button:focus{
 #mobile-footer img{
     height: 100%;
     max-width: 75px;
+    max-height: 75px;
     margin: 0 1em;
 }
 
@@ -1590,6 +1592,15 @@ button:focus{
     font-size: 50px;
     padding: 1em;
     border: 1px solid #FCC900;
+}
+
+.disappear{
+    position: absolute;
+    text-indent: -9999px;
+}
+
+.clear{
+    visibility: hidden;
 }
 
 @media screen and (max-width: 1200px){
@@ -1635,6 +1646,7 @@ button:focus{
     }
     #mobile-nav{
         visibility: visible;
+        position: unset;
     }
     #featured, #store-main > hr{
         visibility: hidden;
