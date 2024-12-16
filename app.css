@@ -583,7 +583,7 @@ p {
     position: fixed;
     right: 1em;
     bottom: 1em;
-    scale: 0.8;
+    transform: scale(0.8);
 }
 
 .confirmation {
@@ -1616,7 +1616,7 @@ button:focus{
     }
     #categories{
         max-width: none;
-        min-width: none;
+        min-width: unset;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -1704,5 +1704,40 @@ button:focus{
         margin-top: 1em;
         width: fit-content;
         border: 2px solid white;
+    }
+    #products{
+        flex-direction: column;
+    }
+    .merch{
+        width: fit-content;
+    }
+    .merch img{
+        width: 100%;
+    }
+    #product-main{
+        flex-direction: column;
+        margin-left: 2em;
+    }
+    #product-main img{
+        width: 90%;
+        margin-left: 0;
+    }
+    #purchase{
+        position: unset;
+    }
+    .cart-item{
+        margin-right: 0;
+        margin-left: 10em;
+        padding-right: 5em;
+    }
+    #config-main{
+        flex-direction: column;
+        margin-top: 4em;
+    }
+    #config-all{
+        margin: 0;
+    }
+    #config-bar{
+        width: 100%;
     }
 }
