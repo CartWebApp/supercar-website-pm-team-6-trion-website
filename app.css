@@ -510,8 +510,9 @@ p {
   overflow: hidden;
   position: relative;
   margin: 4.7em auto 0;
-  width: 99vw; 
+  width: 100vw; 
   height: 55em;
+  background-color: black;
 }
 
 .option, .option img { 
@@ -522,13 +523,8 @@ p {
 .option {
   overflow: hidden;
   position: absolute;  
-  transform: skewX(-66.7deg);
-  /* use javascript to update angle */
-}
-.option::before{
-    background-image: url("images/background-img.webp");
-    /* make dual-image background image?*/
-    /* https://www.sitepoint.com/css3-transform-background-image/ */
+  transform: skewX(-60.9454deg);
+  background-image: url("images/background-img.webp");
 }
 
 .option:first-child {
@@ -543,7 +539,7 @@ p {
 
 .option img { 
     opacity: .5;
-    transition: .5s;
+    transition: 200ms;
 }
 
 .option img:hover { 
@@ -551,7 +547,7 @@ p {
 }
 
 .option img, .option:after {
-  transform: skewX(66.7deg);
+  transform: skewX(60.9454deg);
   transform-origin: inherit;
 }
 
@@ -564,6 +560,13 @@ p {
   letter-spacing: .1em;
   text-transform: uppercase;
   content: attr(data-inf);
+}
+
+.optionText{
+    visibility: hidden;
+    font-size: 50px;
+    font-weight: 700;
+    position: absolute;
 }
 
 .option:first-child:after { 
@@ -1513,4 +1516,23 @@ button:focus{
     align-self: flex-start;
     margin: 0.5em 0 0 1em;
     font-weight: 500;
+}
+
+@media screen and (max-width: 1200px){
+    .option, .option img, .pageOption{
+        transform: none;
+        position: relative;
+        height: 50%;
+        background-color: transparent;
+        background-repeat: no-repeat;
+        object-fit: cover;
+    }
+    .option:after{
+        visibility: hidden;
+    }
+    .optionText{
+        visibility: visible;
+        margin: 0.5em 1em;
+        position: unset;
+    }
 }
