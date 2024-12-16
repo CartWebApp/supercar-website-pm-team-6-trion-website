@@ -106,7 +106,7 @@ nav > ul{
     margin: 0 0.7em;
 }
 
-#footer{
+#desk-footer{
     background-color: #3F3F4C;
     display: flex;
     justify-content: space-evenly;
@@ -137,7 +137,7 @@ nav > ul{
     width: 5vw;
 }
 
-#footer h3{
+#desk-footer h3{
     margin: 0;
     font-size: 30px;
 }
@@ -698,8 +698,8 @@ p {
     align-items: center;
 }
 
-.missionText p{
-    max-width: 1em;
+.missionText{
+    /* max-width: 1em; */
     text-wrap: wrap;
     margin: 5em 3em 0 0;
 }
@@ -712,7 +712,6 @@ p {
     width: 10em;
     border: none;
 }
-
 
 .aboutMain hr {
     width: 99.92%;
@@ -1331,7 +1330,7 @@ button:focus{
 .previousItem {
     display: flex;
     background-color: #2C2C2C;
-    width: 40%;
+    width: fit-content;
     margin-top: 2em;
     border: 3px solid #FCC900;
     border-radius: 15px;
@@ -1339,14 +1338,16 @@ button:focus{
 
 .previousItem img {
     display: flex;
-    width: 50%;
+    width: 20em;
     border-radius: 10px;
 }
 
 .allOrders {
+    align-self: center;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    max-width: 50vw;
     margin-bottom: 2em;
 }
 
@@ -1518,6 +1519,53 @@ button:focus{
     font-weight: 500;
 }
 
+#mobile-nav{
+    background-color: #3F3F4C;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    visibility: hidden;
+}
+
+#mobile1 img{
+    width: 65%;
+    margin: 0.5em 1em;
+}
+
+#mobile2 img{
+    width: 50%;
+    margin: 0.5em 2em;
+}
+
+#mobile-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3F3F4C;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-style: italic;
+    visibility: hidden;
+}
+
+#mobile-footer h2{
+    background-color: #2C2C2C;
+    border-radius: 8px;
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+    padding: 0.2em 0.4em;
+}
+
+#mobile-footer img{
+    height: 100%;
+    max-width: 75px;
+    margin: 0 1em;
+}
+
 @media screen and (max-width: 1200px){
     .option, .option img, .pageOption{
         transform: none;
@@ -1534,5 +1582,127 @@ button:focus{
         visibility: visible;
         margin: 0.5em 1em;
         position: unset;
+    }
+}
+
+/* approx phone screen size */
+@media screen and (max-width: 500px){
+    #desk-nav{
+        visibility: hidden;
+        height: 0;
+        overflow: hidden;
+        position: absolute;
+    }
+    #desk-footer{
+        visibility: hidden;
+        height: 0;
+        overflow: hidden;
+    }
+    .to-top{
+        visibility: hidden;
+        height: 0;
+        overflow: hidden;
+    }
+    /* absolute position wasn't working 😭 */
+    #mobile-footer{
+        visibility: visible;
+    }
+    #mobile-nav{
+        visibility: visible;
+    }
+    #featured, #store-main > hr{
+        visibility: hidden;
+        position: absolute;
+    }
+    #categories{
+        max-width: none;
+        min-width: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .shop-card{
+        max-width: none;
+        width: 90%;
+    }
+    .shop-card img{
+        max-width: none;
+        width: 100%;
+    }
+    .intExt{
+        flex-direction: column;
+    }
+    .intExt a{
+        display: unset;
+        position: unset;
+        width: 75%;
+        align-self: center;
+        text-align: center;
+        margin: 0;
+        margin-bottom: 0.5em;
+    }
+    .ext, .int{
+        margin: 0 0 0 2em;
+    }
+    .allOrders img{
+        width: 40vw;
+    }
+    .previousItem p{
+        margin-right: 1em;
+    }
+    .hero{
+        padding: 21vh 1vw;
+        background-position: -20vw -10vh;
+        background-repeat: no-repeat;
+        background-attachment: unset;
+        background-image: url("images/trionblacksupercar2\ 1\ \(1\).png");
+    }
+    .card{
+        background-image: none;
+        border: 2px solid #FCC900;
+        border-radius: 20px;
+        flex-direction: column;
+        padding: 0;
+    }
+    .card img{
+        width: 100%;
+        border: transparent;
+        border-radius: 20px 20px 0 0;
+    }
+    .card-right .card-text{
+        padding: 0;
+        margin: 0;
+    }
+    .card-text, .card-right .card-text{
+        margin: 0 0 0 1em;
+    }
+    .card-right{
+        flex-direction: column-reverse;
+    }
+    .card-right .card-text a, .card-text a{
+        margin-bottom: 0.5em;
+        align-self: flex-end;
+    } 
+    .home-desc > a > img{
+        width: 100%;
+    }
+    .home-desc article img{
+        width: 20%;
+    }
+    .home-desc article hr{
+        width: 85%;
+    }
+    .home-desc article p{
+        margin: 0 1em;
+    }
+    .accountMain div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .accessibilityOpt{
+        margin-top: 1em;
+        width: fit-content;
+        border: 2px solid white;
     }
 }
